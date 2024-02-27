@@ -82,6 +82,7 @@ if (window.innerWidth > 450) {
     background: '#03e003',
     mount: contactContent,
     width: '735px',
+    hidden: true,
     onblur: function() {
       this.setBackground('#112c4f');
       this.addClass('border-shadow');
@@ -99,6 +100,7 @@ if (window.innerWidth > 450) {
     left: '25px',
     background: '#03e003',
     mount: contactContentMobile,
+    hidden: true,
     onblur: function() {
       this.setBackground('#112c4f');
       this.addClass('border-shadow');
@@ -118,6 +120,7 @@ about.addEventListener('click', () => {
       left: '25px',
       mount: aboutContent,
       width: '735px',
+      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
@@ -134,7 +137,8 @@ about.addEventListener('click', () => {
       top: '25px',
       left: '25px',
       background: '#03e003',
-      mount: aboutContentMobile,
+      mount: aboutContent,
+      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
@@ -158,6 +162,7 @@ contact.addEventListener('click', () => {
       background: '#03e003',
       mount: contactContent,
       width: '735px',
+      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
@@ -175,6 +180,7 @@ contact.addEventListener('click', () => {
       left: '25px',
       background: '#03e003',
       mount: contactContentMobile,
+      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
@@ -196,6 +202,7 @@ moreInfo.addEventListener('click', () => {
       left: '50px',
       background: '#03e003',
       mount: moreInfoContent,
+      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
@@ -213,6 +220,7 @@ moreInfo.addEventListener('click', () => {
       left: '50px',
       background: '#03e003',
       mount: moreInfoContentMobile,
+      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
