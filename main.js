@@ -73,44 +73,7 @@ function autoType() {
 }
 
 //Header Menu Windows
-if (window.innerWidth > 450) {
-  new WinBox({
-    title: 'Contact Us',
-    class: ['contact-window', 'no-full', 'no-max', 'no-min'],
-    top: '25px',
-    left: '25px',
-    background: '#03e003',
-    mount: contactContent,
-    width: '735px',
-    hidden: true,
-    onblur: function() {
-      this.setBackground('#112c4f');
-      this.addClass('border-shadow');
-    },
-    onfocus: function() {
-      this.setBackground('#03e003');
-      this.removeClass('border-shadow');
-    },
-  });
-} else {
-  new WinBox({
-    title: 'Contact Us',
-    class: ['contact-window', 'no-full', 'no-max', 'no-min'],
-    top: '25px',
-    left: '25px',
-    background: '#03e003',
-    mount: contactContentMobile,
-    hidden: true,
-    onblur: function() {
-      this.setBackground('#112c4f');
-      this.addClass('border-shadow');
-    },
-    onfocus: function() {
-      this.setBackground('#03e003');
-      this.removeClass('border-shadow');
-    },
-  });
-}
+
 about.addEventListener('click', () => {
   if (window.innerWidth > 450) {
     new WinBox({
@@ -120,7 +83,6 @@ about.addEventListener('click', () => {
       left: '25px',
       mount: aboutContent,
       width: '735px',
-      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
@@ -138,7 +100,6 @@ about.addEventListener('click', () => {
       left: '25px',
       background: '#03e003',
       mount: aboutContent,
-      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
@@ -162,7 +123,6 @@ contact.addEventListener('click', () => {
       background: '#03e003',
       mount: contactContent,
       width: '735px',
-      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
@@ -180,7 +140,6 @@ contact.addEventListener('click', () => {
       left: '25px',
       background: '#03e003',
       mount: contactContentMobile,
-      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
@@ -202,7 +161,6 @@ moreInfo.addEventListener('click', () => {
       left: '50px',
       background: '#03e003',
       mount: moreInfoContent,
-      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
@@ -220,7 +178,6 @@ moreInfo.addEventListener('click', () => {
       left: '50px',
       background: '#03e003',
       mount: moreInfoContentMobile,
-      hidden: true,
       onblur: function() {
         this.setBackground('#112c4f');
         this.addClass('border-shadow');
